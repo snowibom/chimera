@@ -1,0 +1,63 @@
+@import "../../shared/tiles/tiles.less";
+
+h2 { margin-top: 0; }
+
+.row-xp {
+    text-align: right;
+    width: 2.5rem;
+}
+
+.stats {
+    text-align: center;
+}
+
+.tech {
+    border-collapse: collapse;
+    margin-bottom: 0;
+
+    th {
+        padding: 0.5rem 0;
+    }
+    td {
+        border-top: solid 1px #000000;
+        padding: 0.5rem 0;
+    }
+}
+
+.tile-button {
+    width: 170px;
+
+    img {
+        height: 200px;
+    }
+}
+
+.tiles {
+    text-align: center;
+
+    .tile-button {
+        background: transparent;
+        cursor: pointer;
+        margin: 2rem 0;
+        opacity: 0.75;
+    
+        &:hover{
+            opacity: 1;
+        }
+    
+        &.active{
+            background: transparent;
+            opacity: 1;
+        }
+    }
+    .tile-detail {
+        border-radius: 5px;
+        text-align: left;
+        margin: 0 4rem;
+        width: calc(100% - 8rem);
+
+        &.active {
+            margin: 0 4rem;
+        }
+    }
+}

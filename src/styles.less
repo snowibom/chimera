@@ -1,0 +1,98 @@
+/*TEXT*/
+h1 {
+    color: #f03a17;
+    font-family: fantasy;
+    font-size: 5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: fantasy;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: fantasy;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+/*LAYOUT*/
+table {
+    margin: 1rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*LAYOUT*/
+body {
+    background: #263652;
+    margin: 0;
+}
+
+.outer-container {
+    padding: 0 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+@media screen and (min-width: 80rem) {
+    .container {
+        padding: 0;
+    }
+}
+
+/*GRID*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+.md-40, .md-50, .md-60 {
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    width:100%;
+}
+@media screen and (min-width: 45rem) {
+    .md-40 { width: 40%; }
+    .md-50 { width: 50%; }
+    .md-60 { width: 60%; }
+}
+
+/*MAIN*/
+.home {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-decoration: none;;
+}
+.nav-list {
+    text-transform: uppercase;
+    text-align: center;
+    .nav-item {
+        color: #f03a17;
+        color: white;
+        font-family: fantasy;
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+        text-decoration: none;
+        &:hover {
+            color: #af0d1a;
+            color: #ffc83d;
+        }
+        &.active {
+            color: white;
+            color: #f03a17;
+            cursor: default;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+<app-main-nav pageTitle={{title}}></app-main-nav>
+<div class="container">
+    <div class="tiles">
+        <span *ngFor="let job of jobs; let i = index;">
+            <button (click)="tilesService.tileButton(i)" class="tile-button">
+                <img src="../../../assets/images/{{job.Name}}.png" alt="{{job.Name}}">
+            </button>
+            <div class="tile-detail">
+                <div class="detail-padding">
+                    <div class="grid">
+                        <div class="md-40">
+                            <h2>{{job.Name}}</h2>
+                            <p><strong>Hp:</strong> {{job.End}}, <strong>Fp:</strong> {{job.Wil}}</p>
+                            <p><strong>Block:</strong> 0, <strong>Dodge:</strong> {{job.Agi}}, <strong>Resist:</strong> {{job.Wil}}</p>
+                            <p><strong>Mv:</strong> {{job.Mv}}, <strong>Jm:</strong> {{job.Jm}}</p>
+                            <table class="stats">
+                                <tr>
+                                    <th>STR</th>
+                                    <th>END</th>
+                                    <th>INT</th>
+                                    <th>WIL</th>
+                                    <th>DEX</th>
+                                    <th>AGI</th>
+                                </tr>
+                                <tr>
+                                    <td>{{job.Str}}</td>
+                                    <td>{{job.End}}</td>
+                                    <td>{{job.Int}}</td>
+                                    <td>{{job.Wil}}</td>
+                                    <td>{{job.Dex}}</td>
+                                    <td>{{job.Agi}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="md-60">
+                            <table class="tech">
+                                <tr>
+                                    <th>Tech</th>
+                                    <th>Source</th>
+                                    <th class="row-xp">Xp</th>
+                                </tr>
+                                <tr *ngFor="let tec of techList(job.Name)">
+                                    <td>{{tec.Name}}</td>
+                                    <td>{{tec.Class}}</td>
+                                    <td class="row-xp">{{tec.Xp}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
