@@ -1,1 +1,53 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
+<div class="container">
+    <div class="tiles">
+        <span *ngFor="let mob of mobs; let i = index;">
+            <button (click)="tilesService.tileButton(i)" class="tile-button">
+                <img src="/assets/images/{{mob.Name}}.png" alt="{{mob.Name}}">
+            </button>
+            <div class="tile-detail">
+                <div class="detail-padding">
+                    <div class="grid">
+                        <div class="md-40">
+                            <h2>{{mob.Name}}</h2>
+                            <p><strong>Hp:</strong> {{mob.End}}, <strong>Fp:</strong> {{mob.Wil}}</p>
+                            <p><strong>Block:</strong> 0, <strong>Dodge:</strong> {{mob.Agi}}, <strong>Resist:</strong> {{mob.Wil}}</p>
+                            <p><strong>Mv:</strong> {{mob.Mv}}, <strong>Jm:</strong> {{mob.Jm}}</p>
+                            <table class="stats">
+                                <tr>
+                                    <th>STR</th>
+                                    <th>END</th>
+                                    <th>INT</th>
+                                    <th>WIL</th>
+                                    <th>DEX</th>
+                                    <th>AGI</th>
+                                </tr>
+                                <tr>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.Str}}</td>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.End}}</td>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.Int}}</td>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.Wil}}</td>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.Dex}}</td>
+                                    <td>{{mob.Str >= 0 ? "+ " : "- "}}{{mob.Agi}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="md-60">
+                            <table class="tech">
+                                <tr>
+                                    <th>TECH</th>
+                                    <th class="row-xp">Xp</th>
+                                </tr>
+                                <tr *ngFor="let tec of techList(mob.Name)">
+                                    <td>{{tec.Name}}</td>
+                                    <td class="row-xp">{{tec.Xp}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br *ngIf="i == 1 || i == 13 || i == 16">
+        </span>
+    </div>
+</div>

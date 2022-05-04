@@ -2781,7 +2781,7 @@
                     "Cat": "Job"
                 },
                 {
-                    "Name": "Bomb",
+                    "Name": "Beetle",
                     "Type": "Action",
                     "Dmg": "",
                     "Fp": 0,
@@ -3521,7 +3521,7 @@
                     "Area": "1",
                     "Description": "Attack by pecking with enormous beak.",
                     "Xp": 0,
-                    "Class": "Chocobo",
+                    "Class": "Dodo",
                     "Cat": "Mob"
                 },
                 {
@@ -3533,7 +3533,7 @@
                     "Area": "2",
                     "Description": "Invigorate the life force and restore HP with a flap of the wings.",
                     "Xp": 0,
-                    "Class": "Chocobo",
+                    "Class": "Dodo",
                     "Cat": "Mob"
                 },
                 {
@@ -3545,7 +3545,7 @@
                     "Area": "2",
                     "Description": "Purge status effects with a cleansing flap of the wings.",
                     "Xp": 0,
-                    "Class": "Chocobo",
+                    "Class": "Dodo",
                     "Cat": "Mob"
                 },
                 {
@@ -3557,7 +3557,7 @@
                     "Area": "1",
                     "Description": "Attack by shooting concealed spheres.",
                     "Xp": 0,
-                    "Class": "Chocobo",
+                    "Class": "Dodo",
                     "Cat": "Mob"
                 },
                 {
@@ -3569,7 +3569,7 @@
                     "Area": "1",
                     "Description": "Attack by raining down a small meteor.",
                     "Xp": 0,
-                    "Class": "Chocobo",
+                    "Class": "Dodo",
                     "Cat": "Mob"
                 },
                 {
@@ -3641,7 +3641,7 @@
                     "Area": "1",
                     "Description": "Attack by biting with an enormous mouth.",
                     "Xp": 0,
-                    "Class": "Bomb",
+                    "Class": "Beetle",
                     "Cat": "Mob"
                 },
                 {
@@ -3653,7 +3653,7 @@
                     "Area": "3",
                     "Description": "Self-destruct, inflicting damage in the surrounding area.",
                     "Xp": 0,
-                    "Class": "Bomb",
+                    "Class": "Beetle",
                     "Cat": "Mob"
                 },
                 {
@@ -3665,7 +3665,7 @@
                     "Area": "1",
                     "Description": "Attack by tossing a bomblet as a grenade.",
                     "Xp": 0,
-                    "Class": "Bomb",
+                    "Class": "Beetle",
                     "Cat": "Mob"
                 },
                 {
@@ -3677,7 +3677,7 @@
                     "Area": "1",
                     "Description": "Attack the area with spreading flames.",
                     "Xp": 0,
-                    "Class": "Bomb",
+                    "Class": "Beetle",
                     "Cat": "Mob"
                 },
                 {
@@ -3689,7 +3689,7 @@
                     "Area": "1",
                     "Description": "Attack by shooting out flames.",
                     "Xp": 0,
-                    "Class": "Bomb",
+                    "Class": "Beetle",
                     "Cat": "Mob"
                 },
                 {
@@ -3701,7 +3701,7 @@
                     "Area": "1",
                     "Description": "Attack with keen-edged claws.",
                     "Xp": 0,
-                    "Class": "Panther",
+                    "Class": "Blight",
                     "Cat": "Mob"
                 },
                 {
@@ -3713,7 +3713,7 @@
                     "Area": "1",
                     "Description": "Poison the target by injecting venom.",
                     "Xp": 0,
-                    "Class": "Panther",
+                    "Class": "Blight",
                     "Cat": "Mob"
                 },
                 {
@@ -3725,7 +3725,7 @@
                     "Area": "1",
                     "Description": "Attack with a powerful kick.",
                     "Xp": 0,
-                    "Class": "Panther",
+                    "Class": "Blight",
                     "Cat": "Mob"
                 },
                 {
@@ -3737,7 +3737,7 @@
                     "Area": "1",
                     "Description": "Attack by releasing luminous energy.",
                     "Xp": 0,
-                    "Class": "Panther",
+                    "Class": "Blight",
                     "Cat": "Mob"
                 },
                 {
@@ -3749,7 +3749,7 @@
                     "Area": "1",
                     "Description": "Feast on the target's blood to restore HP.",
                     "Xp": 0,
-                    "Class": "Panther",
+                    "Class": "Blight",
                     "Cat": "Mob"
                 },
                 {
@@ -3761,7 +3761,7 @@
                     "Area": "1",
                     "Description": "Attack with long, thin, whip-like tentacles.",
                     "Xp": 0,
-                    "Class": "Mindflayer",
+                    "Class": "Crayfish",
                     "Cat": "Mob"
                 },
                 {
@@ -3773,7 +3773,7 @@
                     "Area": "1",
                     "Description": "Rob the target of sight by belching black ink.",
                     "Xp": 0,
-                    "Class": "Mindflayer",
+                    "Class": "Crayfish",
                     "Cat": "Mob"
                 },
                 {
@@ -3785,7 +3785,7 @@
                     "Area": "3",
                     "Description": "Nullify status effects by producing uncanny sound waves.",
                     "Xp": 0,
-                    "Class": "Mindflayer",
+                    "Class": "Crayfish",
                     "Cat": "Mob"
                 },
                 {
@@ -3797,7 +3797,7 @@
                     "Area": "2",
                     "Description": "Disrupt the psyche, destroying the rational mind.",
                     "Xp": 0,
-                    "Class": "Mindflayer",
+                    "Class": "Crayfish",
                     "Cat": "Mob"
                 },
                 {
@@ -3809,7 +3809,7 @@
                     "Area": "1",
                     "Description": "Abscond with a fragment of the soul, lowering the target's level by 1.",
                     "Xp": 0,
-                    "Class": "Mindflayer",
+                    "Class": "Crayfish",
                     "Cat": "Mob"
                 },
                 {
@@ -4001,7 +4001,7 @@
                     "Area": "1",
                     "Description": "Attack by tearing with talons while in midair.",
                     "Xp": 0,
-                    "Class": "Aevis",
+                    "Class": "Strix",
                     "Cat": "Mob"
                 },
                 {
@@ -4013,7 +4013,7 @@
                     "Area": "1",
                     "Description": "Attack by dropping an explosive feather on the target.",
                     "Xp": 0,
-                    "Class": "Aevis",
+                    "Class": "Strix",
                     "Cat": "Mob"
                 },
                 {
@@ -4025,7 +4025,7 @@
                     "Area": "1",
                     "Description": "Receive glittering gil.",
                     "Xp": 0,
-                    "Class": "Aevis",
+                    "Class": "Strix",
                     "Cat": "Mob"
                 },
                 {
@@ -4037,7 +4037,7 @@
                     "Area": "1",
                     "Description": "Attack vital spots with a long beak, petrifying the target.",
                     "Xp": 0,
-                    "Class": "Aevis",
+                    "Class": "Strix",
                     "Cat": "Mob"
                 },
                 {
@@ -4049,7 +4049,7 @@
                     "Area": "1",
                     "Description": "Employ a special skill that reduces physical attack power.",
                     "Xp": 0,
-                    "Class": "Aevis",
+                    "Class": "Strix",
                     "Cat": "Mob"
                 },
                 {
@@ -4241,7 +4241,7 @@
                     "Area": "1",
                     "Description": "Attack by flinging filthy tentacles about.",
                     "Xp": 0,
-                    "Class": "Malboro",
+                    "Class": "Shroom",
                     "Cat": "Mob"
                 },
                 {
@@ -4253,7 +4253,7 @@
                     "Area": "1",
                     "Description": "Smear on viscous saliva to form an invisible, magick-reflecting wall.",
                     "Xp": 0,
-                    "Class": "Malboro",
+                    "Class": "Shroom",
                     "Cat": "Mob"
                 },
                 {
@@ -4265,7 +4265,7 @@
                     "Area": "1",
                     "Description": "Belch forth sticky secretions from deep within to gum up the target and prevent movement.",
                     "Xp": 0,
-                    "Class": "Malboro",
+                    "Class": "Shroom",
                     "Cat": "Mob"
                 },
                 {
@@ -4277,7 +4277,7 @@
                     "Area": "3",
                     "Description": "Belch forth putrid stench to inflict status ailments.",
                     "Xp": 0,
-                    "Class": "Malboro",
+                    "Class": "Shroom",
                     "Cat": "Mob"
                 },
                 {
@@ -4289,7 +4289,7 @@
                     "Area": "1",
                     "Description": "Coat the target in malboro spores, turning it into a malboro.",
                     "Xp": 0,
-                    "Class": "Malboro",
+                    "Class": "Shroom",
                     "Cat": "Mob"
                 },
                 {
@@ -4361,7 +4361,7 @@
                     "Area": "1",
                     "Description": "Inflict damage with a body blow.",
                     "Xp": 0,
-                    "Class": "Dragon",
+                    "Class": "Wyvern",
                     "Cat": "Mob"
                 },
                 {
@@ -4373,7 +4373,7 @@
                     "Area": "1",
                     "Description": "Attack by swinging a thick tail.",
                     "Xp": 0,
-                    "Class": "Dragon",
+                    "Class": "Wyvern",
                     "Cat": "Mob"
                 },
                 {
@@ -4385,7 +4385,7 @@
                     "Area": "1",
                     "Description": "Attack with breath of ice.",
                     "Xp": 0,
-                    "Class": "Dragon",
+                    "Class": "Wyvern",
                     "Cat": "Mob"
                 },
                 {
@@ -4397,7 +4397,7 @@
                     "Area": "1",
                     "Description": "Attack with breath of lightning.",
                     "Xp": 0,
-                    "Class": "Dragon",
+                    "Class": "Wyvern",
                     "Cat": "Mob"
                 },
                 {
@@ -4409,7 +4409,7 @@
                     "Area": "1",
                     "Description": "Attack with breath of flame.",
                     "Xp": 0,
-                    "Class": "Dragon",
+                    "Class": "Wyvern",
                     "Cat": "Mob"
                 },
                 {

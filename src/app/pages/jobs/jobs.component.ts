@@ -27,10 +27,6 @@ export class JobsComponent implements OnInit {
         public tilesService: TilesService,
     ) {}
 
-    matchClass(tec: any): any {
-        return tec.Class == "Courier";
-    }
-
     ngOnInit(): void {
         this.jobs = this.jobsService.getJobs();
         this.tech = this.techService.getTech();

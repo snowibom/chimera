@@ -9,6 +9,7 @@ import { JobsComponent } from './pages/jobs/jobs.component';
 import { TechComponent } from './pages/tech/tech.component';
 import { MobsComponent } from './pages/mobs/mobs.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MainNavComponent } from './components/main-nav/main-nav.component';
     TechComponent,
     MobsComponent,
     MainNavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

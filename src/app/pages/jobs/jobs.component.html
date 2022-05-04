@@ -3,7 +3,7 @@
     <div class="tiles">
         <span *ngFor="let job of jobs; let i = index;">
             <button (click)="tilesService.tileButton(i)" class="tile-button">
-                <img src="../../../assets/images/{{job.Name}}.png" alt="{{job.Name}}">
+                <img src="/assets/images/{{job.Name}}.png" alt="{{job.Name}}">
             </button>
             <div class="tile-detail">
                 <div class="detail-padding">
@@ -23,25 +23,23 @@
                                     <th>AGI</th>
                                 </tr>
                                 <tr>
-                                    <td>{{job.Str}}</td>
-                                    <td>{{job.End}}</td>
-                                    <td>{{job.Int}}</td>
-                                    <td>{{job.Wil}}</td>
-                                    <td>{{job.Dex}}</td>
-                                    <td>{{job.Agi}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.Str}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.End}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.Int}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.Wil}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.Dex}}</td>
+                                    <td>{{job.Str >= 0 ? "+ " : "- "}}{{job.Agi}}</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="md-60">
                             <table class="tech">
                                 <tr>
-                                    <th>Tech</th>
-                                    <th>Source</th>
+                                    <th>TECH</th>
                                     <th class="row-xp">Xp</th>
                                 </tr>
                                 <tr *ngFor="let tec of techList(job.Name)">
                                     <td>{{tec.Name}}</td>
-                                    <td>{{tec.Class}}</td>
                                     <td class="row-xp">{{tec.Xp}}</td>
                                 </tr>
                             </table>
@@ -49,6 +47,7 @@
                     </div>
                 </div>
             </div>
+            <br *ngIf="i == 1 || i == 13 || i == 16">
         </span>
     </div>
 </div>

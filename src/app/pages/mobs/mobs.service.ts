@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 
-export interface IJobs {
+export interface IMobs {
     Name: string,
     Mv: number,
     Jm: number,
@@ -16,11 +16,11 @@ export interface IJobs {
     providedIn: 'root'
 })
 
-export class JobsService {
-    getJobs(): IJobs[] {
+export class MobsService {
+    getMobs(): IMobs[] {
         return [
             {
-                "Name": "Courier",
+                "Name": "Goblin",
                 "Mv": 4,
                 "Jm": 3,
                 "Str": 2,
@@ -31,7 +31,7 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Artisan",
+                "Name": "Goo",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 0,
@@ -42,51 +42,7 @@ export class JobsService {
                 "Agi": 1
             },
             {
-                "Name": "Fighter",
-                "Mv": 3,
-                "Jm": 3,
-                "Str": 3,
-                "End": 2,
-                "Int": 0,
-                "Wil": 0,
-                "Dex": 0,
-                "Agi": 0
-            },
-            {
-                "Name": "Hunter",
-                "Mv": 3,
-                "Jm": 3,
-                "Str": 2,
-                "End": 0,
-                "Int": 0,
-                "Wil": 0,
-                "Dex": 2,
-                "Agi": 1
-            },
-            {
-                "Name": "Scientist",
-                "Mv": 3,
-                "Jm": 3,
-                "Str": -2,
-                "End": 0,
-                "Int": 5,
-                "Wil": 2,
-                "Dex": 0,
-                "Agi": 0
-            },
-            {
-                "Name": "Medic",
-                "Mv": 3,
-                "Jm": 3,
-                "Str": 0,
-                "End": 1,
-                "Int": 0,
-                "Wil": 2,
-                "Dex": 0,
-                "Agi": 2
-            },
-            {
-                "Name": "Monk",
+                "Name": "Beetle",
                 "Mv": 3,
                 "Jm": 4,
                 "Str": 3,
@@ -97,18 +53,40 @@ export class JobsService {
                 "Agi": 2
             },
             {
-                "Name": "Mercenary",
-                "Mv": 4,
-                "Jm": 4,
+                "Name": "Wolf",
+                "Mv": 3,
+                "Jm": 3,
+                "Str": 3,
+                "End": 2,
+                "Int": 0,
+                "Wil": 0,
+                "Dex": 0,
+                "Agi": 0
+            },
+            {
+                "Name": "Blight",
+                "Mv": 3,
+                "Jm": 3,
+                "Str": -2,
+                "End": 0,
+                "Int": 5,
+                "Wil": 2,
+                "Dex": 0,
+                "Agi": 0
+            },
+            {
+                "Name": "Dodo",
+                "Mv": 3,
+                "Jm": 3,
                 "Str": 2,
                 "End": 0,
                 "Int": 0,
                 "Wil": 0,
-                "Dex": 3,
-                "Agi": 2
+                "Dex": 2,
+                "Agi": 1
             },
              {
-                "Name": "Occultist",
+                "Name": "Crayfish",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 2,
@@ -118,8 +96,19 @@ export class JobsService {
                 "Dex": 0,
                 "Agi": 0
             },
+            {
+                "Name": "Ciceda",
+                "Mv": 4,
+                "Jm": 4,
+                "Str": 2,
+                "End": 0,
+                "Int": 0,
+                "Wil": 0,
+                "Dex": 3,
+                "Agi": 2
+            },
            {
-                "Name": "Naturalist",
+                "Name": "Shroom",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 0,
@@ -130,18 +119,18 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Outlander",
-                "Mv": 4,
+                "Name": "Spirit",
+                "Mv": 3,
                 "Jm": 3,
-                "Str": 3,
-                "End": 3,
+                "Str": 0,
+                "End": 1,
                 "Int": 0,
-                "Wil": 3,
+                "Wil": 2,
                 "Dex": 0,
-                "Agi": 0
+                "Agi": 2
             },
             {
-                "Name": "Knight",
+                "Name": "Elk",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 4,
@@ -152,7 +141,18 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Tactician",
+                "Name": "Demihuman",
+                "Mv": 4,
+                "Jm": 3,
+                "Str": 3,
+                "End": 3,
+                "Int": 0,
+                "Wil": 3,
+                "Dex": 0,
+                "Agi": 0
+            },
+            {
+                "Name": "Lizard",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 1,
@@ -163,7 +163,7 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Counselor",
+                "Name": "Sea Angel",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 0,
@@ -174,7 +174,7 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Assassin",
+                "Name": "Corvid",
                 "Mv": 4,
                 "Jm": 4,
                 "Str": 3,
@@ -185,7 +185,7 @@ export class JobsService {
                 "Agi": 4
             },
             {
-                "Name": "Engineer",
+                "Name": "Wurm",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 4,
@@ -196,7 +196,7 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Astrologist",
+                "Name": "Manta",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 0,
@@ -207,7 +207,7 @@ export class JobsService {
                 "Agi": 3
             },
             {
-                "Name": "Paladin",
+                "Name": "Behemoth",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 3,
@@ -218,7 +218,7 @@ export class JobsService {
                 "Agi": 0
             },
             {
-                "Name": "Judge",
+                "Name": "Strix",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 4,
@@ -228,7 +228,7 @@ export class JobsService {
                 "Dex": 0,
                 "Agi": 0
             },            {
-                "Name": "Performer",
+                "Name": "Dryad",
                 "Mv": 4,
                 "Jm": 4,
                 "Str": 3,
@@ -239,7 +239,7 @@ export class JobsService {
                 "Agi": 4
             },
             {
-                "Name": "Psychic",
+                "Name": "Wyvern",
                 "Mv": 3,
                 "Jm": 3,
                 "Str": 1,
@@ -251,7 +251,7 @@ export class JobsService {
             },
 
             {
-                "Name": "Automaton",
+                "Name": "Golem",
                 "Mv": 4,
                 "Jm": 4,
                 "Str": 5,
