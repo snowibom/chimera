@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TechService, ITech } from '../tech/tech.service';
 
 @Component({
   selector: 'app-tech',
@@ -8,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class TechComponent implements OnInit {
 
   title = "Tech"
-  constructor() { }
+  tech: ITech[] = [];
+
+
+  techList() {
+    return this.tech
+  }
+
+  constructor(
+    private techService: TechService
+  ) { }
 
   ngOnInit(): void {
+    this.tech = this.techService.getTech();
   }
 
 }
