@@ -11,11 +11,6 @@ export class TechComponent implements OnInit {
   title = "Tech"
   tech: ITech[] = [];
 
-
-  techList() {
-    return this.tech
-  }
-
   constructor(
     private techService: TechService
   ) { }

@@ -1,6 +1,5 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
-
     <table class="tech">
         <tr>
             <th>Tech Name</th>
@@ -8,7 +7,7 @@
             <th>Class</th>
             <th class="row-xp">Xp</th>
         </tr>
-        <tr *ngFor="let tec of techList()">
+        <tr *ngFor="let tec of tech">
             <td>{{tec.Name}}</td>
             <td>{{tec.Type}}</td>
             <td>{{tec.Class}}</td>
