@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
     selector: 'app-main-nav',
     template: `
         <div class="centered">
-            <h1 *ngIf="pageTitle == 'Chimera'">👹 <img src="/assets/images/chimera.svg" class="logo-text" alt="Chimera"></h1>
+            <h1 *ngIf="pageTitle == 'Chimera'">👹 <span class="shadow">CHIMERA</span></h1>
             <a  *ngIf="pageTitle != 'Chimera'" routerLink="/" class="home" aria-label="chimera">👹</a>
         </div>
         <div class="container">
