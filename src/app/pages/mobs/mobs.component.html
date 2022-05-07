@@ -1,11 +1,11 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
-    <div class="tiles">
+    <div class="classes tiles">
         <span *ngFor="let mob of mobs; let i = index;">
             <button (click)="tilesService.tileButton(i)" class="tile-button">
                 <img src="/assets/images/{{mob.Name}}.png" alt="{{mob.Name}}">
             </button>
-            <div class="tile-detail">
+            <div class="tile-detail content">
                 <div class="detail-padding">
                     <div class="grid">
                         <div class="md-40">

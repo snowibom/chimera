@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-main-nav',
@@ -15,7 +15,8 @@ import { Component, Input, OnInit } from '@angular/core';
             </nav>
         </div>
     `,
-    styleUrls: ['./main-nav.component.less']
+    styleUrls: ['./main-nav.component.less'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class MainNavComponent implements OnInit {
 

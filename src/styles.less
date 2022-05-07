@@ -1,3 +1,5 @@
+@import "app/shared/tiles/tiles.less";
+
 /*TEXT*/
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
 
@@ -6,7 +8,8 @@ html {
 }
 
 body {
-    padding: 1rem 0 5rem;
+    // padding: 1rem 0 5rem;
+    padding: 1rem 0;
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
@@ -94,6 +97,46 @@ body {
     .md-40 { width: 40%; }
     .md-50 { width: 50%; }
     .md-60 { width: 60%; }
+}
+
+
+/*MAIN*/
+.content {
+    background: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+}
+@media screen and (min-width: 45rem) {
+    .content {
+        margin: 0 4rem;
+        width: calc(100% - 8rem);
+    }
+}
+
+.classes {
+    text-align: center;
+    margin: 2rem 0;
+
+    .tile-button {
+        background: transparent;
+        cursor: pointer;
+        margin: 2rem 0;
+        opacity: 0.75;
+        width: 170px;
+    
+        &:hover{
+            opacity: 1;
+        }
+    
+        &.active{
+            background: transparent;
+            opacity: 1;
+        }
+    }
 }
 
 .colors {
