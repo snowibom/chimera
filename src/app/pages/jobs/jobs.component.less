@@ -53,11 +53,13 @@ h2 { margin-top: 0; }
         // color: white;
         border-radius: 5px;
         text-align: left;
-        margin: 0 4rem;
-        width: calc(100% - 8rem);
-
-        &.active {
-            margin: 0 4rem;
-        }
+        width: 100%;
+        
     }
+    @media screen and (min-width: 45rem) {
+        .tile-detail {
+            margin: 0 4rem;
+            width: calc(100% - 8rem);
+        }
+    }    
 }
