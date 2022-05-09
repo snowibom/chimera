@@ -3,6 +3,8 @@
     <input [(ngModel)]="className.isSelected" *ngFor="let className of class" type="checkbox" name="{{className}}"
         value="{{className}}" (change)="filterClass()">
     <input [(ngModel)]="nameFilter" type="search" name="nameFilter" value="nameFilter" (keyup)="filterByName($event)" />
+    <input [(ngModel)]="tech.isSelected" *ngFor="let tech of techCheckBox" type="checkbox" name="{{tech.name}}"
+        value="{{tech.name}}" (change)="filterClass()">
     <div class="content">
         <table class="tech">
             <tr>

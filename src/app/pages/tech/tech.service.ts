@@ -12,6 +12,11 @@
         Class: string;
         Cat: string;
     }
+
+    export interface ITechCheckBox{
+        name: string;
+        isSelected: boolean;
+    }
     
     @Injectable({
         providedIn: 'root'
