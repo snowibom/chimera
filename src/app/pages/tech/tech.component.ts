@@ -24,7 +24,7 @@ export class TechComponent implements OnInit {
   {
     let filteredClasses: classCheckbox = [];
     filteredClasses = this.class.filter(x => x.isSelected == true)
-
+    this.filteredTech = this.tech;
     if(filteredClasses.length > 0)
     {
       this.filteredTech = [];
@@ -34,19 +34,15 @@ export class TechComponent implements OnInit {
         });
       });
     }
-    else
-    {
-      this.filteredTech = this.tech;
-    }
     this.filteredTech.sort((a,b)=>a.Class.localeCompare(b.Class));
   }
 
   filterByName(e :any)
   {
-    this.filteredTech = this.tech
+    this.filteredTech = this.tech;
     if(e.target.value.trim())
     {
-      this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+      this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
     }
   }
 
