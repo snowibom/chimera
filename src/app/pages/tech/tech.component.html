@@ -1,9 +1,8 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
-    <span *ngFor="let className of class; let i=index">
-        <input [(ngModel)]="className.isSelected" type="checkbox" name="{{className}}" value="{{className}}"
-            (change)="performFilter()">
-    </span>
+    <input [(ngModel)]="className.isSelected" *ngFor="let className of class" type="checkbox" name="{{className}}"
+        value="{{className}}" (change)="filterClass()">
+    <input [(ngModel)]="nameFilter" type="search" name="nameFilter" value="nameFilter" (keyup)="filterByName($event)" />
     <div class="content">
         <table class="tech">
             <tr>

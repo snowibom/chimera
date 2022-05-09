@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { filter } from 'rxjs';
 import { TechService, ITech } from '../tech/tech.service';
 
 @Component({
@@ -11,6 +10,7 @@ export class TechComponent implements OnInit {
 
   title = "Tech"
   techFilter: any[] = [];
+  nameFilter: string = "";
   tech: ITech[] = [];
   filteredTech: ITech[] = [];
   class: classCheckbox = [];
@@ -20,7 +20,7 @@ export class TechComponent implements OnInit {
   ) { }
 
 
-  performFilter()
+  filterClass()
   {
     let filteredClasses: classCheckbox = [];
     filteredClasses = this.class.filter(x => x.isSelected == true)
@@ -39,6 +39,15 @@ export class TechComponent implements OnInit {
       this.filteredTech = this.tech;
     }
     this.filteredTech.sort((a,b)=>a.Class.localeCompare(b.Class));
+  }
+
+  filterByName(e :any)
+  {
+    this.filteredTech = this.tech
+    if(e.target.value.trim())
+    {
+      this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+    }
   }
 
   ngOnInit(): void {
