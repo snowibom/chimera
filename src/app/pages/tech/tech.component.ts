@@ -39,7 +39,7 @@ export class TechComponent implements OnInit {
 
   filterByName(e :any)
   {
-    this.filteredTech = this.tech;
+    this.filterClass();
     if(e.target.value.trim())
     {
       this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
