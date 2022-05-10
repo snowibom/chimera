@@ -20,6 +20,8 @@ h1 {
     font-family: 'Teko', sans-serif;
     font-size: 5rem;
     font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -36,7 +38,6 @@ h3 {
 
 table {
     color: #252525;
-    margin: 1rem 0;
     text-align: left;
     width: 100%;
 }
@@ -105,26 +106,27 @@ body {
     background: #ffffff;
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     padding: 1rem;
     text-align: left;
     width: 100%;
 }
 @media screen and (min-width: 45rem) {
     .content {
-        margin: 0 4rem;
+        margin-bottom: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
         width: calc(100% - 8rem);
     }
 }
 
 .classes {
     text-align: center;
-    margin: 2rem 0;
 
     .tile-button {
         background: transparent;
         cursor: pointer;
-        margin: 2rem 0;
+        margin-bottom: 1rem;
         opacity: 0.75;
         width: 170px;
     
@@ -135,6 +137,10 @@ body {
         &.active{
             background: transparent;
             opacity: 1;
+
+            .tile-detail {
+                margin-bottom: 1rem;
+            }
         }
     }
 }
