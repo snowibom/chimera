@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TechService, ITech } from '../tech/tech.service';
+import { ITech, TechService} from '../tech/tech.service';
+import { FilterService, classCheckbox } from 'src/app/shared/filter.service';
 
 @Component({
   selector: 'app-tech',
@@ -9,42 +10,22 @@ import { TechService, ITech } from '../tech/tech.service';
 export class TechComponent implements OnInit {
 
   title = "Tech"
-  techFilter: any[] = [];
-  nameFilter: string = "";
-  tech: ITech[] = [];
+  tech: ITech[] =[];
   filteredTech: ITech[] = [];
   class: classCheckbox = [];
 
   constructor(
-    private techService: TechService
+    private techService: TechService,
+    private filterService: FilterService
   ) { }
 
-  filter(e :any)
-  {
-    this.getClassCheckBoxes();
-    if(e.target.value.trim())
-    {
-        this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-    }
-  }
+checkboxFilter(){
+  this.filteredTech = this.filterService.getClassCheckBoxes()
+}
 
-  getClassCheckBoxes()
-  {
-    let filteredClasses: classCheckbox = [];
-    filteredClasses = this.class.filter(x => x.isSelected)
-    this.filteredTech = this.tech;
-
-    if(filteredClasses.length > 0)
-    {
-      this.filteredTech = [];
-      filteredClasses.forEach(t => {
-        this.tech.filter(x => x.Class == t.name).forEach(filterTech => {
-          this.filteredTech.push(filterTech);
-        });
-      });
-    }
-    this.filteredTech.sort((a,b)=>a.Class.localeCompare(b.Class));
-  }
+searchFilter(e:any){
+  this.filteredTech = this.filterService.filterByName(e);
+}
 
   ngOnInit(): void {
     this.tech = this.techService.getTech();
@@ -55,6 +36,9 @@ export class TechComponent implements OnInit {
         this.class.push({name: x.Class, isSelected:false});
       }
     });
+
+    this.filterService.class = this.class;
+    this.filterService.tech = this.tech;
+    this.filterService.filteredTech = this.filteredTech;
   }
 }
-type classCheckbox = Array<{name: string; isSelected: boolean}>;
