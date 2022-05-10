@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TechService, ITech, ITechCheckBox } from '../tech/tech.service';
+import { TechService, ITech } from '../tech/tech.service';
 
 @Component({
   selector: 'app-tech',
@@ -14,7 +14,6 @@ export class TechComponent implements OnInit {
   tech: ITech[] = [];
   filteredTech: ITech[] = [];
   class: classCheckbox = [];
-  techCheckBox: ITechCheckBox[] = [];
 
   constructor(
     private techService: TechService
@@ -25,22 +24,7 @@ export class TechComponent implements OnInit {
     this.getClassCheckBoxes();
     if(e.target.value.trim())
     {
-      let filteredPropList: ITechCheckBox[] =[];
-      filteredPropList = this.techCheckBox.filter(t => t.isSelected)
-      if(filteredPropList.length > 0)
-      {
-        filteredPropList.forEach(prop => {
-          let finalFilter: ITech[] =[];
-          finalFilter = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-          finalFilter.forEach(final => {
-            this.filteredTech.push(final);
-          });
-        });
-      }
-      else
-      {
         this.filteredTech = this.filteredTech.filter(x => x.Name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-      }
     }
   }
 
@@ -70,9 +54,6 @@ export class TechComponent implements OnInit {
       {
         this.class.push({name: x.Class, isSelected:false});
       }
-    });
-    Object.keys(this.tech).forEach(prop => {
-        this.techCheckBox.push({name: prop.toLocaleLowerCase(), isSelected: false});
     });
   }
 }
