@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TilesService } from '../../shared/tiles/tiles.service';
 import { MobsService, IMobs } from './mobs.service';
 import { TechService, ITech } from '../tech/tech.service';
@@ -6,7 +6,8 @@ import { TechService, ITech } from '../tech/tech.service';
 @Component({
     selector: 'app-mobs',
     templateUrl: './mobs.component.html',
-    styleUrls: ['../jobs/jobs.component.less']
+    styleUrls: ['../jobs/jobs.component.less'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class MobsComponent implements OnInit {
 

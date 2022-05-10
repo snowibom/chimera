@@ -1,12 +1,12 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
-    <div class="tiles">
+    <div class="classes tiles">
         <span *ngFor="let job of jobs; let i = index;">
             <button (click)="tilesService.tileButton(i)" class="tile-button">
                 <img src="/assets/images/{{job.Name}}.png" alt="{{job.Name}}">
             </button>
             <div class="tile-detail">
-                <div class="detail-padding">
+                <div class="detail-padding content">
                     <div class="grid">
                         <div class="md-40">
                             <h2>{{job.Name}}</h2>
