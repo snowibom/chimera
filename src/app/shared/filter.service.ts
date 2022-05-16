@@ -32,6 +32,6 @@ export class FilterService {
                 });
             });
         }
-        return this.filteredTech.sort((a, b) => a.Class.localeCompare(b.Class));
+        return this.filteredTech;
     }
 }

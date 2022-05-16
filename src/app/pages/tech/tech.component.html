@@ -1,8 +1,6 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
     <div class="narrow-container">
-        <input [(ngModel)]="className.isSelected" *ngFor="let className of class " type="checkbox" name="{{className}}"
-            value="{{className}}" (change)="checkboxFilter()">
         <input type="search" name="nameFilter" value="nameFilter" (input)="searchFilter($event)" />
     </div>
     <div class="content narrow-container">
