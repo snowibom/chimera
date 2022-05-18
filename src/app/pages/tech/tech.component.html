@@ -1,6 +1,10 @@
 <app-main-nav pageTitle={{title}}></app-main-nav>
 <div class="container">
-    <div class="content">
+    <div class="narrow-container">
+        <label class="reversed">Name </label>
+        <input type="search" name="nameFilter" placeholder="Filter by Name" (input)="searchFilter($event)" />
+    </div>
+    <div class="content narrow-container">
         <table class="tech">
             <tr>
                 <th>Tech Name</th>
@@ -8,7 +12,7 @@
                 <th>Class</th>
                 <th class="row-xp">Xp</th>
             </tr>
-            <tr *ngFor="let tec of tech">
+            <tr *ngFor="let tec of filteredTech">
                 <td>{{tec.Name}}</td>
                 <td>{{tec.Type}}</td>
                 <td>{{tec.Class}}</td>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TechService, ITech } from '../tech/tech.service';
+import { ITech, TechService} from '../tech/tech.service';
+import { FilterService } from 'src/app/shared/filter.service';
 
 @Component({
   selector: 'app-tech',
@@ -9,14 +10,22 @@ import { TechService, ITech } from '../tech/tech.service';
 export class TechComponent implements OnInit {
 
   title = "Tech"
-  tech: ITech[] = [];
+  tech: ITech[] =[];
+  filteredTech: ITech[] = [];
 
   constructor(
-    private techService: TechService
+    private techService: TechService,
+    private filterService: FilterService
   ) { }
+
+searchFilter(e:any){
+  this.filteredTech = this.filterService.filterByName(e);
+}
 
   ngOnInit(): void {
     this.tech = this.techService.getTech();
+    this.filteredTech = this.tech;
+    this.filterService.tech = this.tech;
+    this.filterService.filteredTech = this.filteredTech;
   }
-
 }
